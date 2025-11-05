@@ -1,0 +1,29 @@
+{
+  "name": "notes-application",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burcugns/notes-application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burcugns/notes-application/issues"
+  },
+  "homepage": "https://github.com/burcugns/notes-application#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "uuidv4": "^6.2.13"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
