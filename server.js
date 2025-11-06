@@ -16,7 +16,13 @@ const readData = () => {
   if (!fs.existsSync(dataFilePath)) {
     return [];
   }
+
   const data = fs.readFileSync(dataFilePath);
+  if(!isJsonString(data))
+  {
+    return []
+  }
+
   return JSON.parse(data);
 };
 
@@ -26,6 +32,14 @@ const writeData = (data) => {
 };
 
 
+function isJsonString(str) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
+}
 
 //get all data
 app.get("/note/getAll", (req,res) => {
