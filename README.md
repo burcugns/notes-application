@@ -65,10 +65,10 @@ http://localhost:3001
 - **GET** `/note/:id`
 - Returns a specific note by its ID
 
-### API Endpoints
+### ADD Notes
 
 - **POST** `/note`
-- Body: `{"id" : "uuidv4" task": "Your note text" "created_date" : new Date() }`
+- Body: `{"task": "Your note text"}`
 - Creates a new note with a unique ID and timestamp
 
 ### Update Note
