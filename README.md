@@ -65,7 +65,7 @@ http://localhost:3001
 - **GET** `/note/:id`
 - Returns a specific note by its ID
 
-### ADD Notes
+### Add Note
 
 - **POST** `/note`
 - Body: `{"task": "Your note text"}`
