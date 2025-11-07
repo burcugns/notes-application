@@ -8,8 +8,8 @@ const app = express();
 const PORT = 3001;
 app.use(express.json());
 app.use(cors());
-app.use(express.static("public"))
-const dataFilePath = path.join(__dirname, "data.json");
+app.use(express.static("public"));
+const dataFilePath = app.use(path.join(__dirname, "data.json"));
 
 
 const readData = () => {
