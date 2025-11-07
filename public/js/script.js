@@ -4,7 +4,7 @@ var notesGrid = document.getElementById("grid-main-div");
 
 const API_BASE_URL = window.location.hostname === "localhost"
     ? "http://localhost:3001"
-    : "https://notes-api.onrender.com";
+    : "https://notes-application-8798.onrender.com";
 
 
 document.addEventListener("DOMContentLoaded", () => {
