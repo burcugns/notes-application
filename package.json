@@ -20,6 +20,7 @@
   "homepage": "https://github.com/burcugns/notes-application#readme",
   "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
     "uuidv4": "^6.2.13"
   },
