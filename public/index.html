@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notes Apllication</title>
+    <title>TODO LIST APP</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <main class="container-main">
-      <section class="add-note-section">
-        <div class="add-note-form" id="note-form">
-          <h2 id="form-heading" class="form-title">ADD A NEW NOTE</h2>
+      <section class="add-todo-section">
+        <div class="add-todo-form" id="todo-form">
+          <h2 id="form-heading" class="form-title">
+            Add a New Task <i class="fa-solid fa-feather-pointed"></i>
+          </h2>
           <div class="input-div">
             <input
               class="form-input"
-              id="title-input"
-              name="title"
-              type="text"
-              placeholder="Enter your note title"
-              required
-            />
-            <input
-              class="form-input"
-              id="content-input"
+              id="todo-input"
               name="task"
-              placeholder="Enter your new note"
+              placeholder="Enter your new todo"
               type="text"
               required
             />
@@ -39,35 +35,12 @@
         </div>
       </section>
 
-      <section class="note-list-section">
-        <h2>NOTE LIST</h2>
-        <div class="note-list-grid" id="grid-main-div">
-          <div class="note">
-            <h4>Note Title</h4>
-            <p name="note-p">This is a note description...</p>
-            <input
-              type="text"
-              class="edit-input"
-              name="edit-input-name"
-              style="display: none"
-            />
-            <span>Created at : Nov 7, 2025</span>
-
-            <div class="todo-actions">
-              <button class="done">
-                <i class="fa-solid fa-check"></i>
-              </button>
-              <button class="edit">
-                <i class="fa-solid fa-pen-to-square"></i>
-              </button>
-              <button class="delete">
-                <i class="fa-solid fa-trash-can"></i>
-              </button>
-            </div>
-          </div>
-        </div>
+      <section class="todo-list-section">
+        <h2>NOTES</h2>
+        <div class="todo-list-grid" id="grid-main-div"></div>
       </section>
     </main>
-    <script src="script.js"></script>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
