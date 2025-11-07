@@ -1,6 +1,12 @@
 var submitButton = document.getElementById("submit-button");
 var notesGrid = document.getElementById("grid-main-div");
 
+
+const API_BASE_URL = window.location.hostname === "localhost"
+    ? "http://localhost:3001"
+    : "https://notes-api.onrender.com";
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
     fetchData();
@@ -189,7 +195,7 @@ function isNewNoteUnique(newNote) {
 
 async function addNoteToFile(note) {
     try {
-        const response = await fetch("http://localhost:3001/note", {
+        const response = await fetch(`${API_BASE_URL}/note`, {
             method: "POST",
             body: JSON.stringify({
                 task: note
@@ -210,7 +216,7 @@ async function addNoteToFile(note) {
 
 async function updateNoteToFile(id, note) {
     try {
-        const response = await fetch("http://localhost:3001/note", {
+        const response = await fetch(`${API_BASE_URL}/note`, {
             method: "PUT",
             body: JSON.stringify({
                 id: id,
@@ -232,7 +238,7 @@ async function updateNoteToFile(id, note) {
 
 async function getAllNotesFromFile() {
     try {
-        const response = await fetch("http://localhost:3001/note/getAll");
+        const response = await fetch(`${API_BASE_URL}/note/getAll`);
         const data = await response.json();
         return data;
     } catch (error) {
@@ -244,7 +250,7 @@ async function getAllNotesFromFile() {
 
 async function deleteNoteFromFile(id) {
     try {
-        const response = await fetch(`http://localhost:3001/note/${id}`, {
+        const response = await fetch(`${API_BASE_URL}/note/${id}`, {
             method: "DELETE",
         });
 
