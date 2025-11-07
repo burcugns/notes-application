@@ -1,3 +1,27 @@
 [
-  
+  {
+    "id": "64e0e105-e2ab-4231-8158-5ad78b675e5a",
+    "task": "Study express.js",
+    "created_date": "2025-11-07T20:09:17.871Z"
+  },
+  {
+    "id": "d1886b6a-a683-45d0-abe5-42670421501a",
+    "task": "Go to the gym",
+    "created_date": "2025-11-07T20:09:40.205Z"
+  },
+  {
+    "id": "3be7dbcd-9a64-4c5e-a4f2-fee7fbc17f0e",
+    "task": "Read Node.js documentation",
+    "created_date": "2025-11-07T20:10:05.467Z"
+  },
+  {
+    "id": "ba8d664f-a55f-4828-b8ec-01d471a32a07",
+    "task": "Buy flight ticket",
+    "created_date": "2025-11-07T20:10:19.167Z"
+  },
+  {
+    "id": "1e1b5c3e-bbb4-4e3c-bc40-c98549b03b9c",
+    "task": "Complete Full Stack Tech Blog Application",
+    "created_date": "2025-11-07T20:11:12.238Z"
+  }
 ]
