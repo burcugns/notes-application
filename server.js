@@ -7,7 +7,11 @@ const cors = require("cors");
 const app = express();
 const PORT = 3001;
 app.use(express.json());
-app.use(cors());
+
+app.use(cors({
+  origin: 'https://notes-application-8798.onrender.com'
+}));
+
 app.use(express.static("public"));
 const dataFilePath = path.join(__dirname, "data.json");
 
