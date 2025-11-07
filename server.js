@@ -2,15 +2,11 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const { v4: uuidv4 } = require('uuid');
-const cors = require("cors");
 
 const app = express();
 const PORT = 3001;
 app.use(express.json());
 
-app.use(cors({
-  origin: 'https://notes-application-8798.onrender.com'
-}));
 
 app.use(express.static("public"));
 const dataFilePath = path.join(__dirname, "data.json");
