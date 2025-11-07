@@ -26,7 +26,7 @@ cd notes-application
 2. Install dependencies:
 
 ```bash
-npm install express uuid cors
+npm install express uuid
 ```
 
 ## Usage
