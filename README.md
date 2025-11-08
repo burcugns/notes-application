@@ -99,3 +99,8 @@ notes-application/
 │       └── bg-image.jpg
 └── README.md
 ```
+
+## Deployment
+
+This is my project live on Render.com <br>
+https://notes-application-8798.onrender.com
